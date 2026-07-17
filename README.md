@@ -100,3 +100,51 @@ Copy  config.example.json  to  config.json  and fill in your values:
 }
 ```
 > Security Warning: Never commit  config.json  or any file containing your bot token. The  .gitignore  is pre-configured to exclude it.
+ 
+---
+
+### Project Structure
+
+``` moderation/
+├── README.md                 # This file
+├── LICENSE                   # MIT License
+├── CHANGELOG.md              # Version history
+├── CONTRIBUTING.md           # Contribution guidelines
+├── CODE_OF_CONDUCT.md        # Community standards
+├── SECURITY.md               # Security policy and reporting
+├── requirements.txt          # Runtime dependencies
+├── pyproject.toml            # Build system and tool configuration
+├── .gitignore                # Git ignore rules
+├── config.example.json       # Example configuration
+├── docs/                     # Documentation
+├── moderation/               # Main package
+│   ├── __init__.py           # Package initialization
+│   ├── bot.py                # Bot client and lifecycle
+│   ├── config.py             # Configuration management
+│   ├── logger.py             # Logging setup
+│   ├── constants.py          # Constants and enums
+│   ├── commands/             # Slash commands and prefix commands
+│   ├── events/               # Event listeners
+│   ├── checks/               # Permission and validation checks
+│   ├── database/             # Database models and connections
+│   ├── models/               # Data models and dataclasses
+│   ├── services/             # Business logic services
+│   ├── utilities/            # Helper functions and utilities
+│   ├── localization/         # i18n strings and translations
+│   └── exceptions/           # Custom exceptions
+├── tests/                    # Test suite
+└── scripts/                  # Development and deployment scripts
+```
+
+---
+
+### Contributing
+
+We welcome contributions! Please read our Contributing Guidelines (coming soon) before submitting pull requests.
+- Report bugs via GitHub Issues
+ 
+- Discuss features in GitHub Discussions
+ 
+- Follow our Code of Conduct
+---
+
