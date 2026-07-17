@@ -78,13 +78,15 @@ cp config.example.json config.json
 # Edit config.json with your bot token and settings
 
 # Run the bot
-python -m moderation```
+python -m moderation
+```
 
 ---
+
 ### Configuration
 
 Copy  config.example.json  to  config.json  and fill in your values:
-``` json
+```
 {
     "bot": {
         "token": "YOUR_BOT_TOKEN",
