@@ -78,7 +78,7 @@ cp config.example.json config.json
 # Edit config.json with your bot token and settings
 
 # Run the bot
-python -m moderation
+python -m moderation```
 
 ---
 ### Configuration
