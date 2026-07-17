@@ -1,0 +1,25 @@
+# Core Dependencies
+# Discord API wrapper
+# Documentation: https://discordpy.readthedocs.io/
+discord.py>=2.3.0,<3.0.0
+
+# Configuration and Data
+# JSON schema validation for configuration files
+jsonschema>=4.17.0
+
+# Async Utilities
+# Enhanced async utilities and compatibility
+aiofiles>=23.0.0
+
+# Logging
+# Structured logging support (optional but recommended)
+# structlog>=23.0.0
+
+# Development Dependencies (install with: pip install -e ".[dev]")
+# pytest>=7.4.0
+# pytest-asyncio>=0.21.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# isort>=5.12.0
+# mypy>=1.5.0
+# ruff>=0.0.280
