@@ -1,0 +1,49 @@
+{
+    "_comment": "Copy this file to config.json and fill in your values. Never commit config.json!",
+    "bot": {
+        "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
+        "prefix": "!",
+        "owner_ids": [123456789012345678],
+        "description": "modules.gg Moderation Bot",
+        "activity": {
+            "type": "watching",
+            "text": "over the community"
+        },
+        "intents": {
+            "guilds": true,
+            "members": true,
+            "moderation": true,
+            "messages": true,
+            "message_content": true,
+            "reactions": true,
+            "voice_states": false,
+            "presences": false
+        }
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
+        "date_format": "%Y-%m-%d %H:%M:%S",
+        "file": {
+            "enabled": true,
+            "path": "logs/moderation.log",
+            "max_bytes": 10485760,
+            "backup_count": 5
+        },
+        "console": {
+            "enabled": true,
+            "use_colors": true
+        }
+    },
+    "extensions": {
+        "auto_load": true,
+        "paths": [
+            "moderation.commands",
+            "moderation.events"
+        ]
+    },
+    "database": {
+        "type": "sqlite",
+        "connection_string": "sqlite:///data/moderation.db"
+    }
+}
