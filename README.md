@@ -63,7 +63,7 @@ The **modules.gg Moderation Module v1 Remake** is a complete rewrite of the orig
 
 ```bash
 # Clone the repository
-git clone https://github.com/modulesgg/moderation-module.git
+git clone https://github.com/modulesgg/moderation.git
 cd moderation-module
 
 # Create a virtual environment (recommended)
