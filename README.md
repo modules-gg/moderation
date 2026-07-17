@@ -79,3 +79,22 @@ cp config.example.json config.json
 
 # Run the bot
 python -m moderation
+
+---
+### Configuration
+
+Copy  config.example.json  to  config.json  and fill in your values:
+``` json
+{
+    "bot": {
+        "token": "YOUR_BOT_TOKEN",
+        "prefix": "!",
+        "owner_ids": [123456789012345678]
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+    }
+}
+```
+> Security Warning: Never commit  config.json  or any file containing your bot token. The  .gitignore  is pre-configured to exclude it.
