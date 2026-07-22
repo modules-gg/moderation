@@ -17,54 +17,36 @@ This document describes the internal architecture of the modules.gg Moderation M
 
 ```
 
-moderation/
-├── init.py          # Public API exports
-├── bot.py               # Bot client lifecycle
-├── config.py            # Configuration management
-├── logger.py            # Logging subsystem
-├── constants.py         # Immutable constants and enums
-│
-├── commands/            # User-facing commands (Cogs)
-│   ├── moderation.py    # Core moderation commands
-│   └── owner.py         # Owner-only commands
-│
-├── events/              # Discord gateway event handlers
-│   ├── moderation.py    # Moderation-related events
-│   └── errors.py        # Global error handling
-│
-├── checks/              # Permission predicates
-│   └── permissions.py   # Hierarchy and permission checks
-│
-├── database/            # Data persistence
-│   └── connection.py    # Connection pool management
-│
-├── models/              # Data structures
-│   ├── case.py          # Case entity
-│   ├── user.py          # Moderated user entity
-│   └── guild.py         # Guild settings entity
-│
-├── services/            # Business logic
-│   ├── case_service.py      # Case CRUD operations
-│   ├── modlog_service.py    # Mod log channel management
-│   └── user_service.py      # User record management
-│
-├── utilities/           # Helper functions
-│   ├── converters.py    # Input parsing
-│   ├── formatters.py    # Output formatting
-│   └── validators.py    # Input validation
-│
-├── localization/        # Internationalization
-│   └── strings.py       # String catalog
-│
-└── exceptions/          # Custom exceptions
-├── base.py          # Root exception classes
-├── checks.py        # Permission errors
-├── commands.py      # Command errors
-└── database.py      # Database errors
+├── README.md                 # This file
+├── LICENSE                   # MIT License
+├── CHANGELOG.md              # Version history
+├── CONTRIBUTING.md           # Contribution guidelines
+├── CODE_OF_CONDUCT.md        # Community standards
+├── SECURITY.md               # Security policy and reporting
+├── requirements.txt          # Runtime dependencies
+├── pyproject.toml            # Build system and tool configuration
+├── .gitignore                # Git ignore rules
+├── config.example.json       # Example configuration
+├── docs/                     # Documentation
+├── moderation/               # Main package
+│   ├── __init__.py           # Package initialization
+│   ├── bot.py                # Bot client and lifecycle
+│   ├── config.py             # Configuration management
+│   ├── logger.py             # Logging setup
+│   ├── constants.py          # Constants and enums
+│   ├── commands/             # Slash commands and prefix commands
+│   ├── events/               # Event listeners
+│   ├── checks/               # Permission and validation checks
+│   ├── database/             # Database models and connections
+│   ├── models/               # Data models and dataclasses
+│   ├── services/             # Business logic services
+│   ├── utilities/            # Helper functions and utilities
+│   ├── localization/         # i18n strings and translations
+│   └── exceptions/           # Custom exceptions
+├── tests/                    # Test suite
+└── scripts/                  # 
 
 ```
-
----
 
 ## Data Flow
 
