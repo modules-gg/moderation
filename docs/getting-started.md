@@ -132,4 +132,4 @@ Issue	Solution
 
 ---
 
-Need help? Open a [GitHub Discussion](https://github.com/modulesgg/moderation/discussions).
+Need help? Open a [GitHub Discussion](https://github.com/modules-gg/moderation/discussions).
