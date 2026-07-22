@@ -362,4 +362,4 @@ If any hierarchy check fails, the action is blocked with an explanatory message.
 
 ---
 
-Need help with a specific command? Open a [GitHub Discussion](https://github.com/modulesgg/moderation/discussions).
+Need help with a specific command? Open a [GitHub Discussion](https://github.com/modules-gg/moderation/discussions).
